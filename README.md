@@ -5,11 +5,14 @@ We present a study to evaluate the effectiveness of generating a long-term struc
 
 ### Prerequisites
 
-Set up your [Magenta environment.](https://github.com/tensorflow/magenta/blob/master/README.md) and [Variable Markov Oracle](https://github.com/wangsix/vmo)
+Set up your [Magenta environment](https://github.com/tensorflow/magenta/blob/master/README.md) and [Variable Markov Oracle](https://github.com/wangsix/vmo). 
+
+When installing Magenta 0.3.9, you may encounter a dependency error on grpcio. Doing the following will install grpcio 1.9.1 and complete the installation of magenta 0.3.9:
 
 ```
-Give examples
+pip3 install grpcio==1.9.1 magenta
 ```
+
 
 ### Installing
 
