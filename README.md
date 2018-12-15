@@ -5,7 +5,7 @@ We present a study to evaluate the effectiveness of generating a long-term struc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Set up your [Magenta environment.](https://github.com/tensorflow/magenta/blob/master/README.md) and [Variable Markov Oracle](https://github.com/wangsix/vmo)
 
 ```
 Give examples
