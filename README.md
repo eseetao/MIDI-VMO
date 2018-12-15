@@ -7,32 +7,26 @@ We present a study to evaluate the effectiveness of generating a long-term struc
 
 Set up your [Magenta environment](https://github.com/tensorflow/magenta/blob/master/README.md) and [Variable Markov Oracle](https://github.com/wangsix/vmo). 
 
-When installing Magenta 0.3.9, you may encounter a dependency error on grpcio. Doing the following will install grpcio 1.9.1 and complete the installation of magenta 0.3.9:
+When installing Magenta 0.3.9, you may encounter a dependency error on grpcio. Doing the following will install grpcio 1.9.1 and complete the installation of Magenta 0.3.9:
 
 ```
 pip3 install grpcio==1.9.1 magenta
 ```
 
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+### Generating melodies with Melody_RNN
 
 ```
-Give the example
+    melody_rnn_generate
+    --config=CONFIG
+    --bundle_file=/Users/../attention_rnn.mag
+    --output_dir=/Users/../attention_rnn
+    --num_outputs=10 
+    --num_steps=512
+    --primer_midi=/Users/../Summer_Primer_Melody.mid
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Where bundle_file is the absolute path to the of the .mag file of the pretrained model and config as either 'basic_rnn', 'lookback_rnn', or 'attention_rnn' that matches the bundle file. 
 
 
 ## Acknowledgments
 
-
+I would like to thank Shlomo Dubnov and CREL members for their guidance, as well as the Google Magenta team for the technical work on music generation. 
